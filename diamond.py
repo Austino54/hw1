@@ -19,19 +19,19 @@ class TurtleController(Node):
     def get_twist_msg(self):
         if self.time < 2:
             msg = self.create_twist(0.0, 0.8)
-        elif self.time < 7:
+        elif self.time >= 3 and self.time < 8:
             msg = self.create_twist(1.0, 0.0)
-        elif self.time >= 7 and self.time < 9:
+        elif self.time >= 9 and self.time < 11:
             msg = self.create_twist(0.0, 1.6)
-        elif self.time >= 10 and self.time < 15:
+        elif self.time >= 12 and self.time < 17:
             msg = self.create_twist(1.0, 0.0)
-        elif self.time >= 15 and self.time < 17:
+        elif self.time >= 18 and self.time < 20:
             msg = self.create_twist(0.0, 1.6)
-        elif self.time >= 18 and self.time < 23:
+        elif self.time >= 21 and self.time < 26:
             msg = self.create_twist(1.0, 0.0)
-        elif self.time >= 22 and self.time < 24:
+        elif self.time >= 27 and self.time < 29:
             msg = self.create_twist(0.0, 1.6)
-        elif self.time >= 25 and self.time < 30:
+        elif self.time >= 30 and self.time < 35:
             msg = self.create_twist(1.0, 0.0)
         else:
             msg = self.create_twist(0.0, 0.0)
