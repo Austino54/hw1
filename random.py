@@ -21,23 +21,23 @@ class TurtleController(Node):
             msg = self.create_twist(1.0, 0.0)
         elif self.time < 8:
             msg = self.create_twist(0.0, 3.2)
-        elif self.time < 11:
+        elif self.time >= 9 and self.time < 12:
             msg = self.create_twist(1.0, 0.0)
-        elif self.time < 12:
+        elif self.time < 13:
             msg = self.create_twist(0.0, 3.2)
-        elif self.time < 15:
+        elif self.time >= 14 and self.time < 17:
             msg = self.create_twist(1.0, 0.0)
-        elif self.time < 17:
+        elif self.time < 19:
             msg = self.create_twist(0.0, 3.2)
-        elif self.time < 23:
+        elif self.time >= 20 and self.time < 26:
             msg = self.create_twist(1.0, 0.0)
-        elif self.time < 25:
-            msg = self.create_twist(0.0, 3.2)
         elif self.time < 28:
+            msg = self.create_twist(0.0, 3.2)
+        elif self.time >= 29 and self.time < 35:
             msg = self.create_twist(1.0, 0.0)
-        elif self.time < 29:
+        elif self.time < 36:
             msg = self.create_twist(0.0, -3.2)
-        elif self.time < 32:
+        elif self.time >= 37 and self.time < 43:
             msg = self.create_twist(1.0, 0.0)
         else:
             msg = self.create_twist(0.0, 0.0)
@@ -59,8 +59,8 @@ def main(args=None):
     # Destroy the node explicitly
     # (optional - otherwise it will be done automatically
     # when the garbage collector destroys the node object)
-    turtle_controller.destroy_node()
-    rclpy.shutdown()
+    # turtle_controller.destroy_node()
+    # rclpy.shutdown()
 
 if __name__ == '__main__':
     main()

@@ -17,7 +17,7 @@ class TurtleController(Node):
         return msg
 
     def get_twist_msg(self):
-        if self.time < 7:
+        if self.time < 8:
             msg = self.create_twist(1.5, 1.6)
         else:
             msg = self.create_twist(0.0, 0.0)

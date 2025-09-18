@@ -27,11 +27,11 @@ class TurtleController(Node):
             msg = self.create_twist(1.0, 0.0)
         elif self.time >= 15 and self.time < 17:
             msg = self.create_twist(0.0, 1.6)
-        elif self.time >= 17 and self.time < 22:
+        elif self.time >= 18 and self.time < 23:
             msg = self.create_twist(1.0, 0.0)
         elif self.time >= 22 and self.time < 24:
             msg = self.create_twist(0.0, 1.6)
-        elif self.time >= 24 and self.time < 29:
+        elif self.time >= 25 and self.time < 30:
             msg = self.create_twist(1.0, 0.0)
         else:
             msg = self.create_twist(0.0, 0.0)
